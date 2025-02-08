@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Management App</title>
+    <link rel="stylesheet" href="new.css">
+</head>
+<body>
+    <div class="container">
+        <h1>User Management</h1>
+       
+        <table>
+            <thead>
+                <tr>
+                    <th>ID</th>
+                    <th>First Name</th>
+                    <th>Last Name</th>
+                    <th>Email</th>
+                    <th>Department</th>
+                    <th>Actions</th>
+                </tr>
+            </thead>
+            <tbody id="user-list"></tbody>
+            <button id="add-user-btn">Add User</button>
+        </table>
+    </div>
+
+    <div id="user-form-container" class="modal">
+        <form id="user-form">
+            <input type="hidden" id="user-id">
+            <label>First Name:</label>
+            <input type="text" id="first-name" required>
+            <label>Last Name:</label>
+            <input type="text" id="last-name" required>
+            <label>Email:</label>
+            <input type="email" id="email" required>
+            <label>Department:</label>
+            <input type="text" id="department" required>
+            <button type="submit">Save</button>
+            <button type="button" id="close-form">Cancel</button>
+        </form>
+    </div>
+
+    <script src="new.js"></script>
+</body>
+</html>
